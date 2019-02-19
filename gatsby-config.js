@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `CHANGE THE WORLD`,
+    author: `okutani`,
+    description: `このサイトは適当人間okutaniが、ふと思いついた言葉を繋げて、遊んで、時に真面目に、自作の詩をつぶやくサイトです。 更新は不定期。`,
+    siteUrl: `https://ctw.okutani.net`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `okutani_t`,
     },
   },
   plugins: [

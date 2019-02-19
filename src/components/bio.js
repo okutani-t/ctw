@@ -3,6 +3,8 @@ import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 function Bio() {
   return (
@@ -31,11 +33,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+            このサイトは適当人間okutaniが、ふと思いついた言葉を繋げて、遊んで、時に真面目に、自作の詩をつぶやくサイトです。
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <FontAwesomeIcon icon={faTwitter} />{social.twitter}
               </a>
             </p>
           </div>
