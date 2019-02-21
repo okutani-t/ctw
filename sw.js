@@ -26,29 +26,29 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-0374ba44a874c4fdcf72.js"
+    "url": "webpack-runtime-d7346aa163084504ed75.js"
   },
   {
-    "url": "styles.aad036051fa37e845e1b.css"
+    "url": "styles.fcdb4eed16973a08d099.css"
   },
   {
     "url": "styles-d0768c95df2079fc3d53.js"
   },
   {
-    "url": "app-cbae17a67b434242446a.js"
+    "url": "app-a4cdc69e42dfc7afc670.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-d272cfac7bbd69517045.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "6d54260dd31203ff171eac1cbf6bdc6a"
+    "revision": "c25f6d9406467198e2e9298baa596f6f"
   },
   {
-    "url": "0-cdbcd55cabeedf0c3ba3.js"
+    "url": "0-f699560afbe8b894c3ac.js"
   },
   {
-    "url": "component---src-pages-404-js-0fc5e59ebf907989a5a5.js"
+    "url": "component---src-pages-404-js-cdef117b7db702eeeea9.js"
   },
   {
     "url": "static/d/833/path---404-html-516-62a-BgWwbtG6uTB8YGAWqBl3BkbZKio.json"
@@ -79,7 +79,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/ctw/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -151,7 +151,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/ctw${pathname}`
+        return `${pathname}`
       } else {
         return pathname
       }
