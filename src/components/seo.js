@@ -27,6 +27,11 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: title,
               },
               {
+                property: `og:image`,
+                // TODO: og:imageを適切に取得する
+                content: 'https://ctw.okutani.net/icons/icon-144x144.png'
+              },
+              {
                 property: `og:description`,
                 content: metaDescription,
               },
